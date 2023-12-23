@@ -5,7 +5,7 @@ const AuthPage = (props) => {
     e.preventDefault();
     const { value } = e.target[0];
     await axios
-      .post("http://localhost:3000/authenticate", {
+      .post("https://mernchatapp-psq7.onrender.com/authenticate", {
         username: value,
         secret: value,
       })
